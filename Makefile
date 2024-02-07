@@ -18,5 +18,5 @@ docs:
 	doxygen Doxyfile
 
 clean:
-	rm -r -f $(build_folder)/*
-	rm -r -f $(doc_folder)/*
+	rm -r -f $(build_folder)
+	rm -r -f $(doc_folder)
