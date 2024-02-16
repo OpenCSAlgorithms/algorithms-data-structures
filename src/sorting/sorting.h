@@ -11,6 +11,9 @@ namespace sorting {
     // Declaration of bubbleSort function
     template<typename T>
     void bubbleSort(std::vector<T>& arr);
+
+    template<typename T>
+    void insertionSort(std::vector<T>& arr);
 }
 
 #endif // SORTING_H

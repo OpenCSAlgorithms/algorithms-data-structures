@@ -22,7 +22,7 @@ int main() {
     
     sorting::bubbleSort(intArr);
     
-    std::cout << "Sorted integer array: ";
+    std::cout << "Sorted integer array using bubble sort: ";
     for (int num : intArr) {
         std::cout << num << " ";
     }
@@ -36,8 +36,24 @@ int main() {
     
     sorting::bubbleSort(doubleArr);
     
-    std::cout << "Sorted double array: ";
+    std::cout << "Sorted double array using bubble sort: ";
     for (double num : doubleArr) {
+        std::cout << num << " ";
+    }
+    std::cout << std::endl;
+
+    // Test insertion sort
+    std::vector<int> intArrInsertion = {64, 34, 25, 12, 22, 11, 90};
+    std::cout << "Original integer array: ";
+    for (int num : intArrInsertion) {
+        std::cout << num << " ";
+    }
+    std::cout << std::endl;
+
+    sorting::insertionSort(intArrInsertion);
+
+    std::cout << "Sorted integer array using insertion sort: ";
+    for (int num : intArrInsertion) {
         std::cout << num << " ";
     }
     std::cout << std::endl;
